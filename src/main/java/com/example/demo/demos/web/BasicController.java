@@ -34,7 +34,11 @@ public class BasicController {
     public String hello(@RequestParam(name = "name", defaultValue = "unknown user") String name) {
         return "Hello " + name;
     }
-
+    @RequestMapping("/helloWorld")
+    @ResponseBody
+    public String helloWorld(@RequestParam int value) {
+        return "Hello " + value;
+    }
     // http://127.0.0.1:8080/user
     @RequestMapping("/user")
     @ResponseBody
