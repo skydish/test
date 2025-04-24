@@ -40,11 +40,11 @@ public class BasicController {
         return "Hello " + value;
     }
 
-    @RequestMapping("/test")
-    @ResponseBody
-    public String test() {
-        return "Hellotest";
-    }
+//    @RequestMapping("/test")
+//    @ResponseBody
+//    public String test() {
+//        return "Hellotest";
+//    }
     // http://127.0.0.1:8080/user
     @RequestMapping("/user")
     @ResponseBody
